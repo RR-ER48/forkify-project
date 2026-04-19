@@ -131,6 +131,9 @@ function controlShopping() {
 
 // window.addEventListener('hashchange', showRecipe);
 // window.addEventListener('load', showRecipe);
+const newFeature = function () {
+  console.log('welcome to the application!');
+};
 function init() {
   recipeView.addHandlerRender(showRecipe);
   recipeView.addHandlerShoping(controlShopping);
@@ -139,6 +142,6 @@ function init() {
   paginationView.addHandlerClick(controlPagination);
   recipeView.addHandlerServings(controlServings);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('welcome');
+  newFeature();
 }
 init();

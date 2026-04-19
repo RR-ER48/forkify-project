@@ -1,0 +1,89 @@
+$primary-color: #f38e82;
+.rit-icon {
+  stroke: $primary-color;
+  fill: #fff;
+  height: 54px;
+  width: 54px;
+  padding: 4px;
+}
+.shopping-user-btn {
+  font-family: inherit;
+  color: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #f38e82;
+  padding: 5px;
+  border-radius: 20px;
+  border-color: #f38e82;
+}
+.rit-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  // z-index: 100;
+  transition: all 0.5s;
+  display: flex; /* 🔥 center modal */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* 🔥 STOP background scroll */
+}
+.rit-shopping-list {
+  width: 450px;
+  background-color: white;
+  padding: 20px 150px 150px;
+
+  // margin-top: 300px;
+  // margin-left: 550px;
+  // margin: 250px auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  scroll-behavior: smooth;
+  max-height: 80vh; /* 🔥 LIMIT HEIGHT */
+  overflow-y: auto; /* 🔥 ENABLE SCROLL */
+}
+.rit-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+.rit-lists {
+  list-style: none;
+}
+.rit-header {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+.rit-msg {
+  text-align: center;
+  color: black;
+  font-size: 15px;
+}
+.hid {
+  visibility: hidden;
+  opacity: 0;
+}
+.rit-btn {
+  font-family: inherit;
+  color: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #f38e82;
+  padding: 10px;
+  border-radius: 20px;
+}
+.shopping-user-btn:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
